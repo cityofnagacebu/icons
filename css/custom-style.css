@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "ZonaPro_Bold";
+	src: url("../fonts/ZonaPro-Bold.otf");
+}
+
+section {
+	height: 6vh;
+	width: 	100%;
+	background: #000;
+	display: flex;
+}
+
+.label {
+	width: 	20%;
+	height: 100%;
+	box-sizing: border-box;	
+	font-family: 'Roboto Thin';	
+}
+
+.news {
+	width: 	80%;
+	height: 100%;
+	box-sizing: border-box;	
+	border-left: 15px solid #f9f9f9;
+	border-top: 6vh solid transparent;
+  	overflow: hidden;
+  	position: relative; 
+}
+
+div.newsText {
+	position: absolute;
+	top: 1%;
+	left: 22.5%;
+	animation-name: marquee;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-timing-function: linear;
+}
+
+@keyframes marquee {
+	0%   {left:22.5%; top:1%;}
+	100% {left:92%; top:1%; opacity: 0;}
+}
